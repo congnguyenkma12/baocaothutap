@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+
+
+  h1= title
+  a(href="/user/create" ,class="btn btn-primary" ,role="button" aria-pressed="true") Create new user
+  form( class="form-control" action='/user/search', method='GET')
+      input(type='text', name='name')
+      button(class="btn btn-primary") Search
+  ul
+  each  user in users
+    li= user.name
+  p Welcome to 

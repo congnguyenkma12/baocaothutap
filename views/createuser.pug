@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+
+
+
+   h1= title
+    form(action='/user/create', method='POST')
+        .form-group
+        label(for='name') Name
+        input#exampleInputEmail1.form-control(name= "name",type='text', aria-describedby='name', placeholder='Enter name')
+        .form-group
+        label(for='address') Address
+        input#exampleInputPassword1.form-control(name = "address",type='text', placeholder='address')
+
+        button.btn.btn-primary(type='submit') Submit
+

@@ -1,0 +1,655 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='description', content='')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags
+  // Title
+  title Delicious - Food Blog Template | Home
+  // Favicon
+
+  link(rel='icon', href='../home/publichome/img/core-img/favicon.ico')
+  // Core Stylesheet
+  link(rel='stylesheet', href='../home/publichome/style.css')
+// Preloader
+  body
+  block content
+#preloader
+  i.circle-preloader
+  img(src='../home/publichome/img/core-img/salad.png', alt='')
+// Search Wrapper
+.search-wrapper
+  // Close Btn
+  .close-btn
+    i.fa.fa-times(aria-hidden='true')
+  .container
+    .row
+      .col-12
+        form(action='#', method='post')
+          input(type='search', name='search', placeholder='Type any keywords...')
+          button(type='submit')
+            i.fa.fa-search(aria-hidden='true')
+// ##### Header Area Start #####
+header.header-area
+  // Top Header Area
+  .top-header-area
+    .container.h-100
+      .row.h-100.align-items-center.justify-content-between
+        // Breaking News
+        .col-12.col-sm-6
+          .breaking-news
+            #breakingNewsTicker.ticker
+              ul
+                li
+                  a(href='#') Hello World!
+                li
+                  a(href='#') Welcome to Colorlib Family.
+                li
+                  a(href='#') Hello Delicious!
+        // Top Social Info
+        .col-12.col-sm-6
+          .top-social-info.text-right
+            a(href='#')
+              i.fa.fa-pinterest(aria-hidden='true')
+            a(href='#')
+              i.fa.fa-facebook(aria-hidden='true')
+            a(href='#')
+              i.fa.fa-twitter(aria-hidden='true')
+            a(href='#')
+              i.fa.fa-dribbble(aria-hidden='true')
+            a(href='#')
+              i.fa.fa-behance(aria-hidden='true')
+            a(href='#')
+              i.fa.fa-linkedin(aria-hidden='true')
+  // Navbar Area
+  .delicious-main-menu
+    .classy-nav-container.breakpoint-off
+      .container
+        // Menu
+        nav#deliciousNav.classy-navbar.justify-content-between
+          // Logo
+          a.nav-brand(href='index.html')
+            img(src='../home/publichome/img/core-img/logo.png', alt='')
+          // Navbar Toggler
+          .classy-navbar-toggler
+            span.navbarToggler
+              span
+              span
+              span
+          // Menu
+          .classy-menu
+            // close btn
+            .classycloseIcon
+              .cross-wrap
+                span.top
+                span.bottom
+            // Nav Start
+            .classynav
+              ul
+                li.active
+                  a(href='index.html') Home
+                li
+                  a(href='#') Pages
+                  ul.dropdown
+                    li
+                      a(href='index.html') Home
+                    li
+                      a(href='about.html') About Us
+                    li
+                      a(href='blog-post.html') Blog Post
+                    li
+                      a(href='receipe-post.html') Receipe Post
+                    li
+                      a(href='contact.html') Contact
+                    li
+                      a(href='elements.html') Elements
+                    li
+                      a(href='#') Dropdown
+                      ul.dropdown
+                        li
+                          a(href='index.html') Home
+                        li
+                          a(href='about.html') About Us
+                        li
+                          a(href='blog-post.html') Blog Post
+                        li
+                          a(href='receipe-post.html') Receipe Post
+                        li
+                          a(href='contact.html') Contact
+                        li
+                          a(href='elements.html') Elements
+                        li
+                          a(href='#') Dropdown
+                          ul.dropdown
+                            li
+                              a(href='index.html') Home
+                            li
+                              a(href='about.html') About Us
+                            li
+                              a(href='blog-post.html') Blog Post
+                            li
+                              a(href='receipe-post.html') Receipe Post
+                            li
+                              a(href='contact.html') Contact
+                            li
+                              a(href='elements.html') Elements
+                li
+                  a(href='#') Mega Menu
+                  .megamenu
+                    ul.single-mega.cn-col-4
+                      li.title Catagory
+                      li
+                        a(href='index.html') Home
+                      li
+                        a(href='about.html') About Us
+                      li
+                        a(href='blog-post.html') Blog Post
+                      li
+                        a(href='receipe-post.html') Receipe Post
+                      li
+                        a(href='contact.html') Contact
+                      li
+                        a(href='elements.html') Elements
+                    ul.single-mega.cn-col-4
+                      li.title Catagory
+                      li
+                        a(href='index.html') Home
+                      li
+                        a(href='about.html') About Us
+                      li
+                        a(href='blog-post.html') Blog Post
+                      li
+                        a(href='receipe-post.html') Receipe Post
+                      li
+                        a(href='contact.html') Contact
+                      li
+                        a(href='elements.html') Elements
+                    ul.single-mega.cn-col-4
+                      li.title Catagory
+                      li
+                        a(href='index.html') Home
+                      li
+                        a(href='about.html') About Us
+                      li
+                        a(href='blog-post.html') Blog Post
+                      li
+                        a(href='receipe-post.html') Receipe Post
+                      li
+                        a(href='contact.html') Contact
+                      li
+                        a(href='elements.html') Elements
+                    .single-mega.cn-col-4
+                      .receipe-slider.owl-carousel
+                        a(href='#')
+                          img(src='../home/publichome/img/bg-img/bg1.jpg', alt='')
+                        a(href='#')
+                          img(src='../home/publichome/img/bg-img/bg6.jpg', alt='')
+                li
+                  a(href='receipe-post.html') Receipies
+                li
+                  a(href='receipe-post.html') 4 Vegans
+                li
+                  a(href='contact.html') Contact
+              // Newsletter Form
+              .search-btn
+                i.fa.fa-search(aria-hidden='true')
+            // Nav End
+// ##### Header Area End #####
+// ##### Hero Area Start #####
+section.hero-area
+  .hero-slides.owl-carousel
+    // Single Hero Slide
+    .single-hero-slide.bg-img(style='background-image: url(/home/publichome/img/bg-img/bg1.jpg);')
+      .container.h-100
+        .row.h-100.align-items-center
+          .col-12.col-md-9.col-lg-7.col-xl-6
+            .hero-slides-content(data-animation='fadeInUp', data-delay='100ms')
+              h2(data-animation='fadeInUp', data-delay='300ms') Delicios Homemade Burger
+              p(data-animation='fadeInUp', data-delay='700ms')
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.
+              a.btn.delicious-btn(href='#', data-animation='fadeInUp', data-delay='1000ms') See Receipe
+    // Single Hero Slide
+    .single-hero-slide.bg-img(style='background-image: url(/home/publichome/img/bg-img/bg6.jpg);')
+      .container.h-100
+        .row.h-100.align-items-center
+          .col-12.col-md-9.col-lg-7.col-xl-6
+            .hero-slides-content(data-animation='fadeInUp', data-delay='100ms')
+              h2(data-animation='fadeInUp', data-delay='300ms') Delicios Homemade Burger
+              p(data-animation='fadeInUp', data-delay='700ms')
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.
+              a.btn.delicious-btn(href='#', data-animation='fadeInUp', data-delay='1000ms') See Receipe
+    // Single Hero Slide
+    .single-hero-slide.bg-img(style='background-image: url(/home/publichome/img/bg-img/bg7.jpg);')
+      .container.h-100
+        .row.h-100.align-items-center
+          .col-12.col-md-9.col-lg-7.col-xl-6
+            .hero-slides-content(data-animation='fadeInUp', data-delay='100ms')
+              h2(data-animation='fadeInUp', data-delay='300ms') Delicios Homemade Burger
+              p(data-animation='fadeInUp', data-delay='700ms')
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.
+              a.btn.delicious-btn(href='#', data-animation='fadeInUp', data-delay='1000ms') See Receipe
+// ##### Hero Area End #####
+// ##### Top Catagory Area Start #####
+section.top-catagory-area.section-padding-80-0
+  .container
+    .row
+      // Top Catagory Area
+      .col-12.col-lg-6
+        .single-top-catagory
+          img(src='../home/publichome/img/bg-img/bg2.jpg', alt='')
+          // Content
+          .top-cta-content
+            h3 Strawberry Cake
+            h6 Simple &amp; Delicios
+            a.btn.delicious-btn(href='receipe-post.html') See Full Receipe
+      // Top Catagory Area
+      .col-12.col-lg-6
+        .single-top-catagory
+          img(src='../home/publichome/img/bg-img/bg3.jpg', alt='')
+          // Content
+          .top-cta-content
+            h3 Chinesse Noodles
+            h6 Simple &amp; Delicios
+            a.btn.delicious-btn(href='receipe-post.html') See Full Receipe
+// ##### Top Catagory Area End #####
+// ##### Best Receipe Area Start #####
+section.best-receipe-area
+  .container
+    .row
+      .col-12
+        .section-heading
+          h3 The best Receipies
+    .row
+      // Single Best Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-best-receipe-area.mb-30
+          img(src='../home/publichome/img/bg-img/r1.jpg', alt='')
+          .receipe-content
+            a(href='receipe-post.html')
+              h5 Sushi Easy Receipy
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+      // Single Best Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-best-receipe-area.mb-30
+          img(src='../home/publichome/img/bg-img/r2.jpg', alt='')
+          .receipe-content
+            a(href='receipe-post.html')
+              h5 Homemade Burger
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+      // Single Best Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-best-receipe-area.mb-30
+          img(src='../home/publichome/img/bg-img/r3.jpg', alt='')
+          .receipe-content
+            a(href='receipe-post.html')
+              h5 Vegan Smoothie
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+      // Single Best Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-best-receipe-area.mb-30
+          img(src='../home/publichome/img/bg-img/r4.jpg', alt='')
+          .receipe-content
+            a(href='receipe-post.html')
+              h5 Calabasa soup
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+      // Single Best Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-best-receipe-area.mb-30
+          img(src='../home/publichome/img/bg-img/r5.jpg', alt='')
+          .receipe-content
+            a(href='receipe-post.html')
+              h5 Homemade Breakfast
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+      // Single Best Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-best-receipe-area.mb-30
+          img(src='../home/publichome/img/bg-img/r6.jpg', alt='')
+          .receipe-content
+            a(href='receipe-post.html')
+              h5 Healthy Fruit Desert
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+// ##### Best Receipe Area End #####
+// ##### CTA Area Start #####
+section.cta-area.bg-img.bg-overlay(style='background-image: url(/home/publichome/img/bg-img/bg4.jpg);')
+  .container.h-100
+    .row.h-100.align-items-center
+      .col-12
+        // Cta Content
+        .cta-content.text-center
+          h2 Gluten Free Receipies
+          p
+            | Fusce nec ante vitae lacus aliquet vulputate. Donec scelerisque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed accumsan neque. Ut vulputate, lectus vel aliquam congue, risus leo elementum nibh
+          a.btn.delicious-btn(href='#') Discover all the receipies
+// ##### CTA Area End #####
+// ##### Small Receipe Area Start #####
+section.small-receipe-area.section-padding-80-0
+  .container
+    .row
+      // Small Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-small-receipe-area.d-flex
+          // Receipe Thumb
+          .receipe-thumb
+            img(src='../home/publichome/img/bg-img/sr1.jpg', alt='')
+          // Receipe Content
+          .receipe-content
+            span January 04, 2018
+            a(href='receipe-post.html')
+              h5 Homemade italian pasta
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+            p 2 Comments
+      // Small Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-small-receipe-area.d-flex
+          // Receipe Thumb
+          .receipe-thumb
+            img(src='../home/publichome/img/bg-img/sr2.jpg', alt='')
+          // Receipe Content
+          .receipe-content
+            span January 04, 2018
+            a(href='receipe-post.html')
+              h5 Baked Bread
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+            p 2 Comments
+      // Small Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-small-receipe-area.d-flex
+          // Receipe Thumb
+          .receipe-thumb
+            img(src='../home/publichome/img/bg-img/sr3.jpg', alt='')
+          // Receipe Content
+          .receipe-content
+            span January 04, 2018
+            a(href='receipe-post.html')
+              h5 Scalops on salt
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+            p 2 Comments
+      // Small Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-small-receipe-area.d-flex
+          // Receipe Thumb
+          .receipe-thumb
+            img(src='../home/publichome/img/bg-img/sr4.jpg', alt='')
+          // Receipe Content
+          .receipe-content
+            span January 04, 2018
+            a(href='receipe-post.html')
+              h5 Fruits on plate
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+            p 2 Comments
+      // Small Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-small-receipe-area.d-flex
+          // Receipe Thumb
+          .receipe-thumb
+            img(src='../home/publichome/img/bg-img/sr5.jpg', alt='')
+          // Receipe Content
+          .receipe-content
+            span January 04, 2018
+            a(href='receipe-post.html')
+              h5 Macaroons
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+            p 2 Comments
+      // Small Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-small-receipe-area.d-flex
+          // Receipe Thumb
+          .receipe-thumb
+            img(src='../home/publichome/img/bg-img/sr6.jpg', alt='')
+          // Receipe Content
+          .receipe-content
+            span January 04, 2018
+            a(href='receipe-post.html')
+              h5 Chocolate tart
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+            p 2 Comments
+      // Small Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-small-receipe-area.d-flex
+          // Receipe Thumb
+          .receipe-thumb
+            img(src='../home/publichome/img/bg-img/sr7.jpg', alt='')
+          // Receipe Content
+          .receipe-content
+            span January 04, 2018
+            a(href='receipe-post.html')
+              h5 Berry Desert
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+            p 2 Comments
+      // Small Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-small-receipe-area.d-flex
+          // Receipe Thumb
+          .receipe-thumb
+            img(src='../home/publichome/img/bg-img/sr8.jpg', alt='')
+          // Receipe Content
+          .receipe-content
+            span January 04, 2018
+            a(href='receipe-post.html')
+              h5 Zucchini Grilled on peper
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+            p 2 Comments
+      // Small Receipe Area
+      .col-12.col-sm-6.col-lg-4
+        .single-small-receipe-area.d-flex
+          // Receipe Thumb
+          .receipe-thumb
+            img(src='../home/publichome/img/bg-img/sr9.jpg', alt='')
+          // Receipe Content
+          .receipe-content
+            span January 04, 2018
+            a(href='receipe-post.html')
+              h5 Chicken Salad
+            .ratings
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star(aria-hidden='true')
+              i.fa.fa-star-o(aria-hidden='true')
+            p 2 Comments
+// ##### Small Receipe Area End #####
+// ##### Quote Subscribe Area Start #####
+section.quote-subscribe-adds
+  .container
+    .row.align-items-end
+      // Quote
+      .col-12.col-lg-4
+        .quote-area.text-center
+          span &quot;
+          h4 Nothing is better than going home to family and eating good food and relaxing
+          p John Smith
+          .date-comments.d-flex.justify-content-between
+            .date January 04, 2018
+            .comments 2 Comments
+      // Newsletter
+      .col-12.col-lg-4
+        .newsletter-area
+          h4 Subscribe to our newsletter
+          // Form
+          .newsletter-form.bg-img.bg-overlay(style='background-image: url(/home/publichome/img/bg-img/bg1.jpg);')
+            form(action='#', method='post')
+              input(type='email', name='email', placeholder='Subscribe to newsletter')
+              button.btn.delicious-btn.w-100(type='submit') Subscribe
+            p
+              | Fusce nec ante vitae lacus aliquet vulputate. Donec sceleri sque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.
+      // Adds
+      .col-12.col-lg-4
+        .delicious-add
+          img(src='../home/publichome/img/bg-img/add.png', alt='')
+// ##### Quote Subscribe Area End #####
+// ##### Follow Us Instagram Area Start #####
+.follow-us-instagram
+  .container
+    .row
+      .col-12
+        h5 Follow Us Instragram
+  // Instagram Feeds
+  .insta-feeds.d-flex.flex-wrap
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='../home/publichome/img/bg-img/insta1.jpg', alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='../home/publichome/img/bg-img/insta2.jpg', alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='../home/publichome/img/bg-img/insta3.jpg', alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='../home/publichome/img/bg-img/insta4.jpg', alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='../home/publichome/img/bg-img/insta5.jpg', alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='../home/publichome/img/bg-img/insta6.jpg', alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='../home/publichome/img/bg-img/insta7.jpg', alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+// ##### Follow Us Instagram Area End #####
+// ##### Footer Area Start #####
+footer.footer-area
+  .container.h-100
+    .row.h-100
+      .col-12.h-100.d-flex.flex-wrap.align-items-center.justify-content-between
+        // Footer Social Info
+        .footer-social-info.text-right
+          a(href='#')
+            i.fa.fa-pinterest(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-facebook(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-twitter(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-dribbble(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-behance(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-linkedin(aria-hidden='true')
+        // Footer Logo
+        .footer-logo
+          a(href='index.html')
+            img(src='../home/publichome/img/core-img/logo.png', alt='')
+        // Copywrite
+        p
+          // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+          | Copyright &copy;
+          script.
+            document.write(new Date().getFullYear());
+          |  All rights reserved | This template is made with 
+          i.fa.fa-heart-o(aria-hidden='true')
+          |  by 
+          a(href='https://colorlib.com', target='_blank') Colorlib
+          // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+// ##### Footer Area Start #####
+// ##### All Javascript Files #####
+// jQuery-2.2.4 js
+
+script(src='/home/publichome/js/jquery/jquery-2.2.4.min.js')
+// Popper js
+script(src='/home/publichome/js/bootstrap/popper.min.js')
+// Bootstrap js
+script(src='/home/publichome/js/bootstrap/bootstrap.min.js')
+// All Plugins js
+script(src='/home/publichome/js/plugins/plugins.js')
+// Active js
+script(src='/home/publichome/js/active.js')
